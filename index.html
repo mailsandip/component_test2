@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.ui.commons"
+				data-sap-ui-theme="sap_platinum">
+		</script>
+		<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+
+		<script>
+		//
+		
+		 var oComp1 = sap.ui.getCore().createComponent({
+		        name: "zui5_conf_try.Component",
+		        url:'/sap/bc/ui5_ui5/sap/zui5_conf_try',
+		      	//url: '/zui5_trip_confirmation',
+		        id: "Comp1", 
+		 
+		    });
+			
+		    var oCompCont1 = new sap.ui.core.ComponentContainer("CompCont1", {
+		        component: oComp1
+		    });
+		    
+		    oCompCont1.placeAt("content");
+		
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
